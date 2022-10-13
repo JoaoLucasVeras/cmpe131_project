@@ -6,6 +6,6 @@ Tools Used:
 * Flask (Python Framework)
 
 Team Members:
-* Joao Lucas Veras
+* Joao Lucas Veras (test)
 * Romuz Abdulhamidov
 * Tan Dao
