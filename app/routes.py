@@ -1,9 +1,10 @@
 from app import myapp_obj
 
 @myapp_obj.route("/")
-
 def hello():
     return "hello"
 
+@myapp_obj.route("/admin")
 def admin():
-    return "This is my admin route!"
+    return "Administration Page!"
+
