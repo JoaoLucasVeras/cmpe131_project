@@ -1,8 +1,17 @@
-<html>
-	<head>
-		<title>Login Page</title>
-	</head>
-	<body>
-		<h1>Welcome to the login in page</h1>
-	</body>
-</html>
+<!DOCTYPE HTML>
+{% extends "base.html" %}
+
+{% block mycontent %}
+
+<title>Login Page</title>
+<h1>Welcome to the login in page! {{a}}</h1>
+<p>Hello {{name}}</p>
+
+<form action="" method = "POST" novalidate>
+	{{form.hidden_tag()}}
+	<p>{{form.username.label}} <br> {{form.username()}}</p>
+	<p>{{form.password.label}} <br> {{form.password()}}</p>
+	<p>{{form.remember_me.label}} <br> {{form.remember_me()}}</p>
+	<p>{{form.submit.label}} <br> {{form.submit()}}</p>
+</form>
+{% endblock %}
